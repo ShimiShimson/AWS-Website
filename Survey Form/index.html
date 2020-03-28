@@ -1,0 +1,95 @@
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+  
+  <div class="container">
+    <header class="header">
+     <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+     <p id="description" class="description text-center">Thank you for taking your time to help us improve</p>
+    </header>
+   
+   <form class="form-group" id="survey-form">
+     
+     
+     <label id="name-label" for="name">Name</label>
+     
+     <input class="form-control" type="text" id="name" placeholder="Enter your name" required></input>
+     
+     
+   <label id="email-label" for="email">Email</label>
+     
+   <input class="form-control" type="email" id="email" placeholder="Enter your email" required></input>
+   
+   
+   <label id="number-label" for="number">Age (optional)</label>
+   <input class="form-control" type="number" id="number" min="1" max="100" placeholder="Enter your age"></input>
+   
+   
+   <label for="dropdown">Which option best describes your current role?</label>
+   
+   <select id="dropdown" class="form-control">
+     
+     <option disabled selected value>Select current role</option> 
+     
+     <option value="student">Student</option>
+     
+     <option value="full-time-job">Full time job</option>
+     
+     <option value="full-time-student">Full time student</option>
+     
+     <option value="other">Other</option>
+     
+   </select>
+   
+   <div class="group-radio">
+   <label for="recommend" class="form-group">Would you recommend freeCodeCamp to a friend?</label>
+   
+   <input class="input-radio" type="radio" name="recommend" value="definitely">Definitely</input>
+   
+   <input class="input-radio" type="radio" name="recommend" value="maybe">Maybe</input>
+   
+   <input class="input-radio" type="radio" name="recommend" value="not-sure">Not sure</input>
+   </div>
+   
+   
+   
+   <div class="group-checkbox">
+     
+     <label class="form-group" for="improve">What would you like to see improved? (Check all that apply)</label>
+     
+   <div><label for="front"><input class="input-checkbox" type="checkbox" name="improve" id="front" value="front">Front-end Projects</label></div>
+   
+   <div><label for="back"><input class="input-checkbox" type="checkbox" name="improve" id="back" value="back">Back-end Projects</label></div>
+   
+   <div><label for="data"><input class="input-checkbox" type="checkbox" name="improve" id="data" value="data">Data Visualization</label></div>
+   
+   <div><label for="Challenges"><input class="input-checkbox" type="checkbox" name="improve" id="Challenges" value="Challenges">Challenges</label></div>
+   
+   <div><label for="open"><input class="input-checkbox" type="checkbox" name="improve" id="open" value="open">Open Source Community</label></div>
+   
+   <div><label for="Gitter"><input class="input-checkbox" type="checkbox" name="improve" id="Gitter" value="Gitter">Gitter help rooms</label></div>
+   
+   <div><label for="Videos"><input class="input-checkbox" type="checkbox" name="improve" id="Videos" value="Videos">Videos</label></div>
+   
+   <div><label for="Meetups"><input class="input-checkbox" type="checkbox" name="improve" id="Meetups" value="Meetups">City Meetups</label></div>
+   
+   <div><label for="Wiki"><input class="input-checkbox" type="checkbox" name="improve" id="Wiki" value="Wiki">Wiki</label></div>
+   
+   <div><label for="Forum"><input class="input-checkbox" type="checkbox" name="improve" id="Forum" value="Forum">Forum</label></div>
+   
+   <div><label for="Additional"><input class="input-checkbox" type="checkbox" name="improve" id="Additional" value="Additional">Additional Courses</label>
+   </div>
+   </div>
+   
+   <label for="comments">Any comments or suggestions?</label>
+   <textarea class="input-textarea" id="comments"></textarea>
+     <div class="form-group">
+         <button type="submit" id="submit" class="submit-button">
+           Submit
+         </button>
+       </div>
+     
+   </form>
+   </div>
